@@ -14,4 +14,4 @@ reg.SetValue(key, '', reg.REG_SZ, 'Pa&ste With Directories')
 
 key1 = reg.CreateKeyEx(key, r"command")
 
-reg.SetValue(key1, '', reg.REG_SZ, python_exe + f'" {cwd}{os.sep}paste_with_directory.py"')
+reg.SetValue(key1, '', reg.REG_SZ, python_exe + ' ' + f'"{cwd}{os.sep}paste_with_directory.py"')
